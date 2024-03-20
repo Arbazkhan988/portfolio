@@ -1,0 +1,130 @@
+.theme-color-pallete {
+    width: 210px;
+    position: fixed;
+    padding: 20px;
+    border-radius: 10px 0px 0 10px;
+    background: var(--fix-white);
+    top: 50%;
+    right: -210px;
+    transform: translate(0px, -50%);
+    transition: right 0.3s ease-in-out;
+    z-index: 99999;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+
+.color-switch h5 {
+    margin: 0 0 10px;
+    color: var(--fix-dark);
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.color-switch h5.sec-title {
+    padding-top: 10px;
+    border-top: 1px solid #959595;
+}
+
+.primary_colors,
+.secondary_colors {
+    margin-bottom: 10px;
+}
+
+.color-swatch:not(.reset) {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 2px solid #fff;
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* Primary color swatches */
+.color-swatch.primary-one {
+    background-color: #007bff;
+}
+.color-swatch.primary-two {
+    background-color: #28a745;
+}
+.color-swatch.primary-three {
+    background-color: #dc3545;
+}
+.color-swatch.primary-four {
+    background-color: #fe7325;
+}
+.color-swatch.primary-five {
+    background-color: #9414e6;
+}
+.color-swatch.primary-six {
+    background-color: #7C3E66;
+}
+.color-swatch.primary-seven {
+    background-color: #02c19e;
+}
+.color-swatch.primary-eight {
+    background-color: #a17b41;
+}
+.color-swatch.primary-nine {
+    background-color: #0A4D68;
+}
+.color-swatch.primary-ten {
+    background-color: #6096B4;
+}
+
+
+/* Secondary color swatches */
+.color-swatch.secondary-dark-1 {
+    background-color: #343a40;
+}
+
+.color-swatch.secondary-dark-2 {
+    background-color: #6b008b;
+}
+
+.color-swatch.secondary-dark-3 {
+    background-color: #8b0000;
+}
+
+/* Add more color swatch classes for other colors if needed */
+.color-swatch.reset {
+    height: 50px;
+    background-color: var(--primary-color);
+    color: var(--fix-white);
+    border: none;
+    display: block;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+a.op-btn {
+    width: 50px;
+    display: inline-block;
+    height: 50px;
+    line-height: 47px;
+    background: #313131;
+    border-radius: 5px 0 0 5px;
+    text-align: center;
+    position: absolute;
+    left: -50px;
+    color: #fff;
+    font-size: 16px;
+}
+a.op-btn img{
+    width: 100%;
+    border-radius: 5px 0 0 5px;
+    max-width: 35px;
+    height: 35px;
+    animation: ispin 6s linear infinite;
+}
+@keyframes ispin {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
